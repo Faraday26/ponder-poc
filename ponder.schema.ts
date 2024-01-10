@@ -1,8 +1,11 @@
 import { createSchema } from "@ponder/core";
 
 export default createSchema((p) => ({
-  Example: p.createTable({
+  BurnedBFR: p.createTable({
     id: p.string(),
-    name: p.string().optional(),
+    timestamp: p.bigint(),
+    period: p.string(),
+    amount: p.bigint(),
+    cumulativeAmount: p.bigint(),
   }),
 }));
