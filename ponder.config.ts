@@ -7,7 +7,7 @@ export default createConfig({
   networks: {
     arbitrum: {
       chainId: 42161,
-      transport: http(process.env.PONDER_RPC_URL_42161),
+      transport: http(process.env.PONDER_RPC_URL_1),
     },
   },
   contracts: {

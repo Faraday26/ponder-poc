@@ -16,6 +16,7 @@ ponder.on("BFR:Transfer", async ({ event, context }) => {
       update: ({ current }) => ({
         amount: current.amount + args.value,
         cumulativeAmount: current.cumulativeAmount + args.value,
+        timestamp: block.timestamp,
       }),
     });
   }
